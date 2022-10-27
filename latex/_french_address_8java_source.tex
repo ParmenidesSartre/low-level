@@ -1,0 +1,19 @@
+\hypertarget{_french_address_8java_source}{}\doxysection{French\+Address.\+java}
+\mbox{\hyperlink{_french_address_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00001}00001 \textcolor{keyword}{class }FrenchAddress \textcolor{keyword}{extends} AddressAbstractClass \{}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00002}00002     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} String COUNTRY = \textcolor{stringliteral}{"{}FRANCE"{}};}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00004}00004     \textcolor{comment}{// Concrete method}}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00005}00005     \textcolor{keyword}{public} String getCountry() \{}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00006}00006         \textcolor{keywordflow}{return} COUNTRY;}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00007}00007     \}}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00009}00009     \textcolor{keyword}{public} String getFullAddress() \{}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00010}00010         \textcolor{keywordflow}{return} getStreet() + EOL\_STRING +}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00011}00011                 getPostalCode() + SPACE + getCity() +}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00012}00012                 EOL\_STRING + COUNTRY + EOL\_STRING;}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00013}00013     \}}
+\DoxyCodeLine{\Hypertarget{_french_address_8java_source_l00014}00014 \}}
+
+\end{DoxyCode}

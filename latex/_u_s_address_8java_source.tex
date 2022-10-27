@@ -1,0 +1,21 @@
+\hypertarget{_u_s_address_8java_source}{}\doxysection{USAddress.\+java}
+\mbox{\hyperlink{_u_s_address_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00001}00001 \textcolor{keyword}{class }USAddress \textcolor{keyword}{extends} AddressAbstractClass \{}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00002}00002     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} String COUNTRY = \textcolor{stringliteral}{"{}UNITED STATES"{}};}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00003}00003     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} String COMMA = \textcolor{stringliteral}{"{},"{}};}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00005}00005     \textcolor{comment}{// Concrete method}}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00006}00006     \textcolor{keyword}{public} String getCountry() \{}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00007}00007         \textcolor{keywordflow}{return} COUNTRY;}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00008}00008     \}}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00010}00010     \textcolor{keyword}{public} String getFullAddress() \{}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00011}00011         \textcolor{keywordflow}{return} getStreet() + EOL\_STRING +}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00012}00012                 getCity() + COMMA + SPACE + getRegion() +}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00013}00013                 SPACE + getPostalCode() + EOL\_STRING +}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00014}00014                 COUNTRY + EOL\_STRING;}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00015}00015     \}}
+\DoxyCodeLine{\Hypertarget{_u_s_address_8java_source_l00016}00016 \}}
+
+\end{DoxyCode}

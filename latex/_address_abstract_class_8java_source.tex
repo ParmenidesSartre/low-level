@@ -1,0 +1,54 @@
+\hypertarget{_address_abstract_class_8java_source}{}\doxysection{Address\+Abstract\+Class.\+java}
+\mbox{\hyperlink{_address_abstract_class_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00001}00001 \textcolor{keyword}{abstract} \textcolor{keyword}{class }AddressAbstractClass \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00002}00002     \textcolor{keyword}{private} String street;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00003}00003     \textcolor{keyword}{private} String city;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00004}00004     \textcolor{keyword}{private} String region;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00005}00005     \textcolor{keyword}{private} String postalCode;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00007}00007     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{final} String EOL\_STRING = System.getProperty(\textcolor{stringliteral}{"{}line.separator"{}});}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00008}00008     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keyword}{final} String SPACE = \textcolor{stringliteral}{"{} "{}};}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00010}00010     \textcolor{keyword}{public} String getStreet() \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00011}00011         \textcolor{keywordflow}{return} street;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00012}00012     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00014}00014     \textcolor{keyword}{public} String getCity() \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00015}00015         \textcolor{keywordflow}{return} city;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00016}00016     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00018}00018     \textcolor{keyword}{public} String getPostalCode() \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00019}00019         \textcolor{keywordflow}{return} postalCode;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00020}00020     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00022}00022     \textcolor{keyword}{public} String getRegion() \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00023}00023         \textcolor{keywordflow}{return} region;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00024}00024     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00026}00026     \textcolor{comment}{// Abstract method}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00027}00027     \textcolor{keyword}{public} \textcolor{keyword}{abstract} String getCountry();}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00029}00029     \textcolor{keyword}{public} String getFullAddress() \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00030}00030         \textcolor{keywordflow}{return} street + EOL\_STRING +}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00031}00031                 city + SPACE + postalCode + EOL\_STRING;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00034}00034     \textcolor{keyword}{public} \textcolor{keywordtype}{void} setStreet(String newStreet) \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00035}00035         street = newStreet;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00038}00038     \textcolor{keyword}{public} \textcolor{keywordtype}{void} setCity(String newCity) \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00039}00039         city = newCity;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00042}00042     \textcolor{keyword}{public} \textcolor{keywordtype}{void} setRegion(String newRegion) \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00043}00043         region = newRegion;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00046}00046     \textcolor{keyword}{public} \textcolor{keywordtype}{void} setPostalCode(String newPostalCode) \{}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00047}00047         postalCode = newPostalCode;}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{_address_abstract_class_8java_source_l00049}00049 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,50 @@
+\hypertarget{_abstract_factory_pattern_8java_source}{}\doxysection{Abstract\+Factory\+Pattern.\+java}
+\mbox{\hyperlink{_abstract_factory_pattern_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00001}\mbox{\hyperlink{class_abstract_factory_pattern}{00001}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{class_abstract_factory_pattern}{AbstractFactoryPattern}} \{}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00002}\mbox{\hyperlink{class_abstract_factory_pattern_af5bf1249646615227dc76cd9fa3f0dab}{00002}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_abstract_factory_pattern_af5bf1249646615227dc76cd9fa3f0dab}{main}}(String[] arguments) \{}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00003}00003         System.out.println(\textcolor{stringliteral}{"{}Example for the AbstractFactory pattern"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00004}00004         System.out.println();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00005}00005         System.out.println(\textcolor{stringliteral}{"{}  Notice that you can"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00006}00006         System.out.println(\textcolor{stringliteral}{"{}  use the Address and PhoneNumber classes when writing"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00007}00007         System.out.println(\textcolor{stringliteral}{"{}  almost all of the code. This allows you to write a very"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00008}00008         System.out.println(\textcolor{stringliteral}{"{}  generic framework, and plug in Concrete Factories"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00009}00009         System.out.println(\textcolor{stringliteral}{"{}  and Products to specialize the behavior of your code)"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00010}00010         System.out.println();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00012}00012         System.out.println(\textcolor{stringliteral}{"{}Creating U.S. Address and Phone Number:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00013}00013         AddressFactoryInterface addressFactory = \textcolor{keyword}{new} USAddressFactoryImpl();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00014}00014         AddressAbstractClass address = addressFactory.createAddress();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00015}00015         PhoneNumberAbstractClass phone = addressFactory.createPhoneNumber();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00017}00017         address.setStreet(\textcolor{stringliteral}{"{}142 Lois Lane"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00018}00018         address.setCity(\textcolor{stringliteral}{"{}Metropolis"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00019}00019         address.setRegion(\textcolor{stringliteral}{"{}WY"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00020}00020         address.setPostalCode(\textcolor{stringliteral}{"{}54321"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00021}00021         phone.setPhoneNumber(\textcolor{stringliteral}{"{}7039214722"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00023}00023         System.out.println(\textcolor{stringliteral}{"{}U.S. address:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00024}00024         System.out.println(address.getFullAddress());}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00025}00025         System.out.println(\textcolor{stringliteral}{"{}U.S. phone number:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00026}00026         System.out.println(phone.getPhoneNumber());}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00027}00027         System.out.println();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00028}00028         System.out.println();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00030}00030         System.out.println(\textcolor{stringliteral}{"{}Creating French Address and Phone Number:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00031}00031         addressFactory = \textcolor{keyword}{new} FrenchAddressFactoryImpl();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00032}00032         address = addressFactory.createAddress();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00033}00033         phone = addressFactory.createPhoneNumber();}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00035}00035         address.setStreet(\textcolor{stringliteral}{"{}21 Rue Victor Hugo"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00036}00036         address.setCity(\textcolor{stringliteral}{"{}Courbevoie"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00037}00037         address.setPostalCode(\textcolor{stringliteral}{"{}40792"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00038}00038         phone.setPhoneNumber(\textcolor{stringliteral}{"{}011324290"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00040}00040         System.out.println(\textcolor{stringliteral}{"{}French address:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00041}00041         System.out.println(address.getFullAddress());}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00042}00042         System.out.println(\textcolor{stringliteral}{"{}French phone number:"{}});}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00043}00043         System.out.println(phone.getPhoneNumber());}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00044}00044     \}}
+\DoxyCodeLine{\Hypertarget{_abstract_factory_pattern_8java_source_l00045}00045 \}}
+
+\end{DoxyCode}
